@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e2e180, #dcdcdc);
+    margin: 0;
+    padding: 0;
+}
+
+.invitation-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #b8b8b8;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.invitation-header {
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #dcdcdc;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.invitation-header h1 {
+    margin: 0;
+    color: #d4af37;
+    /* Color dorado */
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+}
+
+.invitation-content {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Josefin Slab', serif;
+}
+.invitation-content img{
+    width: 80%; /* Tamaño de la imagen */
+    max-width: 150px;
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.invitation-content h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 1.5em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.invitation-content p {
+    line-height: 1.6;
+    color: #666666;
+}
+
+.when-where {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+    padding: 1em;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Lifesavers', cursive;
+}
+
+.when,
+.where {
+    width: 48%;
+}
+
+.when h2,
+.where h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.3em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.when p,
+.where p {
+    margin: 0.5em 0;
+}
+
+.invitation-carousel {
+    text-align: center;
+    padding: 1em;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.invitation-carousel h2{
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.3em;
+    font-family: 'Great Vibes', cursive;
+}
+.carousel {
+    display: flex; /* Cambia el display a flex para que los hijos se alineen en fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    width: auto; /* Elimina el ancho fijo */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.carousel-images {
+    display: flex; /* Coloca las imágenes en fila */
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición entre imágenes */
+}
+
+.carousel-images img {
+    width: auto; /* Permite que la imagen mantenga su tamaño original */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.favorite-people {
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    background: #fff5e6;
+    /* Fondo suave para destacar la sección */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Josefin Slab', serif;
+}
+
+.favorite-people h2 {
+    color: #d4af37;
+    /* Manteniendo el color dorado */
+    font-size: 1.8em;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0.5em;
+}
+
+.favorite-people p {
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.asistencia p,footer {
+    color: #d4af37;
+    /* Manteniendo el color dorado */
+    font-size: 1.8em;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0.5em;
+
+
+}
+
+.carousel-images img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.invitation-footer {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 2px solid #dcdcdc;
+    font-family: 'Josefin Slab', serif;
+}
+
+.invitation-footer p {
+    margin: 0;
+    color: #333333;
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .invitation-header h1 {
+        font-size: 2em;
+    }
+
+    .invitation-content h2 {
+        font-size: 1.3em;
+    }
+
+    .when-where {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .when,
+    .where {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .details {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .invitation-container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .invitation-header h1 {
+        font-size: 1.5em;
+    }
+
+    .invitation-content h2 {
+        font-size: 1.2em;
+    }
+
+    .when-where {
+        flex-direction: column;
+    }
+
+    .when,
+    .where {
+        width: 100%;
+    }
+
+    .details {
+        font-size: 0.8em;
+    }
+}
+
+.favorite-people {
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    background: #fff5e6; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Josefin Slab', serif;
+}
+
+.favorite-people h2 {
+    color: #d4af37; /* Color dorado */
+    font-size: 1.8em;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0.5em;
+}
+
+.familia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+    background-color: #fef3e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.persona {
+    text-align: center;
+    margin: 1em;
+    flex: 0 1 45%; /* Para mostrar dos personas por fila */
+}
+
+.persona p {
+    margin-bottom: 0.5em;
+}
+
+.persona img {
+    width: 80%; /* Tamaño de la imagen */
+    max-width: 150px;
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nombres {
+    font-size: 1.2em;
+    color: #333333;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 0.5em;
+}
+
+.titulo-rol {
+    font-size: 1em;
+    color: #666666;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .persona {
+        flex: 0 1 100%; /* Ocupa toda la fila en pantallas pequeñas */
+    }
+
+    .persona img {
+        width: 70%; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+.when-where {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 0;
+    padding: 1em;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Lifesavers', cursive;
+}
+
+.when, .where {
+    width: 45%;
+    margin-bottom: 1em;
+}
+
+.when img, .where img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.location-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #d4af37; /* Color dorado */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.location-btn:hover {
+    background-color: #b18d2b; /* Color dorado más oscuro en hover */
+    transform: scale(1.05); /* Pequeño efecto de agrandamiento */
+}
+
+@media only screen and (max-width: 768px) {
+    .when, .where {
+        width: 100%;
+    }
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8; /* Mantiene las flechas visibles pero con cierta transparencia */
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.carousel button:focus {
+    outline: none;
+}
+

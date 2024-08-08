@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Bautismo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lifesavers&family=Josefin+Slab:wght@400;700&display=swap">
+</head>
+
+<body>
+    <div class="invitation-container">
+        <div class="invitation-header">
+            <h1>Invitación Especial</h1>
+        </div>
+        <div class="invitation-content">
+            <h2>¡Celebremos Juntos!</h2>
+            <p>Te invitamos a ser parte de la celebración del bautismo de nuestro querido Zlatan Vladimir Mora Mendoza.
+                Tu
+                presencia hará este momento aún más especial.</p>
+                <img src="img7.jpeg" alt="Foto Zlatan">
+        </div>
+        <div class="when-where">
+            <div class="when">
+                <h2>Ceremonia religiosa</h2>
+                <p>Parroquia San Onofre</p><br>
+                <p><strong>Donde:</strong>C. Hacienda de la Quemada 1430 A, Colonia Oblatos, 44700 Guadalajara, Jal.</p>
+                <p><strong>Cuando:</strong> 24/agosto/2024 12:00 p.m.</p>
+                <img src="parroquia2.jpeg" alt="Imagen de la ceremonia" class="location-img">
+                
+                <a href="https://www.google.com/maps/place/Parroquia+de+San+Onofre/@20.6949857,-103.3000584,17z/data=!3m1!4b1!4m6!3m5!1s0x8428b113172d6217:0x3aa9bb2af6ff00f0!8m2!3d20.6949807!4d-103.2974835!16s%2Fg%2F11g8yj2zgz?hl=es-419&entry=ttu" target="_blank" class="location-btn">Ver en Google Maps</a>
+            </div>
+            <div class="where">
+                <h2>Recepción</h2>
+                <p>El Sindicato</p><br>
+                <p><strong>Donde:</strong> C. Puerto del Carmen 2737, La Esperanza (La Federacha ), 44300 Guadalajara, Jal. </p>
+                <p><strong>Cuando:</strong>24/agosto/2024 14:00 p.m.</p>
+                <img src="evento.jpg" alt="Imagen del lugar de la recepción" class="location-img">
+                <a href="https://www.google.com/maps/place/C.+Puerto+del+Carmen+2737,+La+Esperanza+(La+Federacha+),+44300+Guadalajara,+Jal./@20.7084035,-103.3138887,17z/data=!3m1!4b1!4m6!3m5!1s0x8428b106de9f078b:0x3b34e77f3b7eaad9!8m2!3d20.7083985!4d-103.3092753!16s%2Fg%2F11c12qfbdn?hl=es-419&entry=ttu" target="_blank" class="location-btn">Ver en Google Maps</a>
+               
+            </div>
+
+        </div>
+        
+        <div class="invitation-carousel">
+            <h2>Galería de Momentos</h2>
+            <div class="carousel">
+                <button class="carousel-prev">&#10094;</button> <!-- Flecha izquierda -->
+                <div class="carousel-images">
+                    <img src="img1.jpeg" alt="Foto 1">
+                    <img src="img2.jpeg" alt="Foto 2">
+                    <img src="img3.jpeg" alt="Foto 3">
+                    <img src="img4.jpeg" alt="Foto 4">
+                    <img src="img5.jpeg" alt="Foto 5">
+                    <img src="img6.jpeg" alt="Foto 6">
+                </div>
+                <button class="carousel-next">&#10095;</button> <!-- Flecha derecha -->
+            </div>
+        </div>
+        <div class="invitation-footer">
+            <p>Con afecto, Familia Mora Mendoza</p>
+        </div>
+
+        <div class="favorite-people">
+            <h2>Mis Personas Favoritas</h2>
+            <div class="familia">
+                <div class="persona">
+                    <p class="nombres">Alan Ivan Mora Haro</p>
+                    <p class="titulo-rol">Mi Papá</p>
+                    <img src="img8.jpeg" alt="Foto Papá">
+                </div>
+                <div class="persona">
+                    <p class="nombres">Viviana Monserrat Mendoza Esparza</p>
+                    <p class="titulo-rol">Mi Mamá</p>
+                    <img src="img9.jpeg" alt="Foto Mamá">
+                </div>
+                <div class="persona">
+                    <p class="nombres">Zinedine Francisco Zaid Mendoza Esparza</p>
+                    <p class="titulo-rol">Mi Padrino</p>
+                    <img src="img11.jpeg" alt="Foto Padrino">
+                </div>
+                <div class="persona">
+                    <p class="nombres">Silvia Danae Mora Haro</p>
+                    <p class="titulo-rol">Mi Madrina</p>
+                    <img src="img10.jpeg" alt="Foto Madrina">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="asistencia">
+            <p>Número de asistencia: 3317488861/ 3318195053</p>
+        </div>
+        <footer class="asistencia">¿Quieres una invitacion para tu evento?<a href="">visita nuestra pagina</a></footer>
+        <link>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const carousel = document.querySelector('.carousel-images');
+                let index = 0;
+
+                function showNextImage() {
+                    index = (index + 1) % 6; // 6 es el número de imágenes
+                    carousel.style.transform = `translateX(-${index * 100}%)`;
+                }
+
+                setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.carousel-images');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+    let index = 0;
+    const totalImages = document.querySelectorAll('.carousel-images img').length;
+
+    function showImageAtIndex(index) {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextButton.addEventListener('click', function () {
+        index = (index + 1) % totalImages;
+        showImageAtIndex(index);
+    });
+
+    prevButton.addEventListener('click', function () {
+        index = (index - 1 + totalImages) % totalImages;
+        showImageAtIndex(index);
+    });
+});
+
+        </script>
+
+</body>
+
+</html>
